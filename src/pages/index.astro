@@ -1,0 +1,29 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import { Image } from "astro:assets";
+import Header from "../components/Header.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import photo from "../../public/jt.jpeg";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header title={SITE_TITLE} />
+    <main>
+      <div>
+        <h1>Hey, Friends!</h1>
+        <!-- <Image src={photo} alt={"jt"} class="circle-image" /> -->
+      </div>
+      <p>
+        My name is Jordan some call me JT. I'm a Senior Platform Engineer and
+        have been working a lot Go and .NET, and juggling a few side projects
+        too.
+      </p>
+    </main>
+    <!-- <Footer /> -->
+  </body>
+</html>
